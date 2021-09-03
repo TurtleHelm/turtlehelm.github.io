@@ -1,15 +1,6 @@
 /* Imports */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 
-/* Title Styling */
-#alignBtn {
-  text-align: center;
-}
-
-#titleBtn {
-  width: 50%;
-  font-weight: bold;
-}
 
 #titleText {
   font-family: "Oswald", sans-serif;
