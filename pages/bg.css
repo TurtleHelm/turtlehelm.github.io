@@ -1,0 +1,34 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+/* Title Styling */
+#alignBtn {
+  text-align: center;
+}
+
+#titleBtn {
+  width: 50%;
+  font-weight: bold;
+}
+
+#titleText {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding: 50px;
+  color: #ffff;
+}
+
+.highlight {
+    color: #e31b6d;
+    font-size: 50px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #ffff;
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+    color: #0000;
+}
