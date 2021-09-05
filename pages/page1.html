@@ -16,11 +16,12 @@
       crossorigin="anonymous"
     />
 
-    <title>Helm Labs: Projects</title>
+    <title>Helm Labs: Home</title>
     <link href="pages.css" rel="stylesheet" />
   </head>
   <body>
-    <!--
+
+    <!--Navbar-->
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="../index.html"
@@ -29,11 +30,12 @@
       </li>
       <li class="nav-item dropdown">
         <a
-          class="nav-link dropdown-toggle"
+          class="nav-link active dropdown-toggle"
           data-bs-toggle="dropdown"
           href="#"
           role="button"
-          aria-expanded="false">Projects
+          aria-expanded="false">
+          Projects
         </a>
         <ul class="dropdown-menu">
           <li>
@@ -44,33 +46,37 @@
           <li><a class="dropdown-item" href="socials">Socials</a></li>
         </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coming Soon
-        </a>
-      </li>
     </ul>
-    -->
-    <ul class="nav nav-pills">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="/#">Active</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-    <ul class="dropdown-menu dropdown-toggle" data-toggle="dropdown">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
-    <h1 id="titleText">Page 1</h1>
+
+    <!--Main Text-->
+    <div class="container" id="currTime"></div>
+        <h1>Time:</h1>
+        <h1 id="localTime"></h1>
+    </div>
+
+  <script>
+
+    timer();
+    function timer(){
+        var currentTime = new Date()
+        var hours = currentTime.getHours()
+        var minutes = currentTime.getMinutes()
+        var sec = currentTime.getSeconds()
+        if (minutes < 10){
+            minutes = "0" + minutes
+        }
+        if (sec < 10){
+            sec = "0" + sec
+        }
+        var time = hours + ":" + minutes + ":" + sec + " ";
+        if(hours > 11){
+            time += "PM";
+        } else {
+        time += "AM";
+        }
+        document.getElementById('localTime').innerHTML = time;
+        setTimeout(timer,1000);
+        }
+  </script>
   </body>
 </html>
