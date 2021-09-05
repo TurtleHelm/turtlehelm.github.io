@@ -21,5 +21,16 @@ h1 {
 
 body {
     background-image: url("../img/bg.jpg");
-    color: #0000;
+    background-repeat: no-repeat, repeat;
+    color: #ffff;
+}
+
+ul.nav {
+  width: 40%;
+  float: left;
+  border: 1px solid #999;
+  fill: #0000;
+  margin: 0px auto;
+  background-color: #0000;
+  overflow: hidden;
 }
