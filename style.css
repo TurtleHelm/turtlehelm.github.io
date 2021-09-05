@@ -30,5 +30,6 @@ h1 {
 
 body {
     background-image: url("./img/bg.jpg");
-    color: #0000;
+    background-repeat: no-repeat, repeat;
+    color: #ffff;
 }
