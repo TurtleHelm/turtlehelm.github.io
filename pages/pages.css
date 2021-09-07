@@ -27,7 +27,6 @@ body {
 
 .navbar {
   width: 100%;
-  float: left;
   border: 1px solid #999;
   fill: #0000;
   margin: 0px auto;
@@ -40,4 +39,14 @@ body {
     margin: 0px auto;
     background-color: #0000;
     overflow: hidden;
+}
+
+.footerInfo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0px auto;
+  border: 1px solid #999;
+  display: flex;
 }
