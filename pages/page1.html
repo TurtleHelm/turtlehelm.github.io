@@ -48,24 +48,28 @@
     <!--Footer Info-->
 
     <div class="footerInfo">
-    <h6>Time: .</h6>
+    <h6>Time: &nbsp</h6>
     <h6 id="localTime"></h6>
     </div>
 
   <script>
     timer();
     function timer(){
+        //Variables
         var currentTime = new Date()
         var hours = currentTime.getHours()
         var minutes = currentTime.getMinutes()
         var sec = currentTime.getSeconds()
+        
         if (minutes < 10){
             minutes = "0" + minutes
         }
-        if (sec < 10){
+        else if (sec < 10){
             sec = "0" + sec
         }
+        //Full Time
         var time = hours + ":" + minutes + ":" + sec + " ";
+        
         if(hours > 11){
             time += "PM";
         } else {
