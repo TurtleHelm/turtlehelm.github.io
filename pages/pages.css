@@ -25,14 +25,12 @@ body {
     color: #ffff;
 }
 
-ul.nav {
-  width: 90%;
+.navbar {
+  width: 100%;
   float: left;
   border: 1px solid #999;
   fill: #0000;
   margin: 0px auto;
-  background-color: #0000;
-  overflow: hidden;
 }
 
 #currTime {
