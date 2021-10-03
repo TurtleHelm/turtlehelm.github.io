@@ -1,8 +1,5 @@
-##October 3rd
+##October 3rd\
 
-Changes:
-[X] Removed Junk Files (Not in Use) 
-[X] Added this File (How Handy!)
-[X] 
-[X]
-[X]
+Changes:\
+[X] Removed Junk Files (Not in Use)\
+[X] Added this File (How Handy!)\
