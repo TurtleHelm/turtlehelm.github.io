@@ -6,7 +6,7 @@
 
 ## Change Logs
 
- ## October 3rd Changes:&nbsp
+ ## October 3rd Changes:  
  - [x] Removed Junk Files (Not in Use)  
  - [x] Added Update File (How Handy!)  
 
