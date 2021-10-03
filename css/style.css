@@ -91,6 +91,7 @@ canvas {
   z-index: 0;
   font-weight: 500;
   font-size: 75px;
+  background-color: transparent;
   font-family: 'Oswald', sans-serif;
   position: absolute;
   overflow: hidden;
