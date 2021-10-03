@@ -17,3 +17,5 @@
  - [x] Removal of file extensions from URL  
  - `https://turtlehelm.github.io/projects` Not `https://turtlehelm.github.io/projects.html`  
  - [x] Documentation for any projects requiring it  
+ - [ ] Add An About Page  
+ - [ ] Addition of Project Links & Description to Project Page  
