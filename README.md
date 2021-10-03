@@ -15,6 +15,5 @@
  - [ ] Animated Background using [Particle.JS](https://github.com/VincentGarreau/particles.js/)  
  - [ ] Move Project Links & Descriptions to Website for ease of use  
  - [ ] Removal of file extensions from URL  
- - `https://turtlehelm.github.io/projects` Not  
- - `https://turtlehelm.github.io/projects.html`  
+ - `https://turtlehelm.github.io/projects` Not `https://turtlehelm.github.io/projects.html`  
  - [ ] Documentation for any projects requiring it  
