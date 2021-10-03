@@ -1,10 +1,10 @@
 # Helm Labs Official Website
 
- ## Created By TurtleHelm as a portfolio [Website](https://turtlehelm.github.io).
+# Created By TurtleHelm as a portfolio [Website](https://turtlehelm.github.io).
 
- # Change Logs
+## Change Logs
 
- ## October 3rd  
+## October 3rd  
   
  ## Changes:  
  - [x] Removed Junk Files (Not in Use)  
