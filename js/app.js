@@ -1,3 +1,5 @@
+//Particle.JS 
+
 particlesJS('particles-js',
   
   {
@@ -50,7 +52,7 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#6cff57",//#6cff57 #f91ae2 #661af9 #0352dd
+        "color": "#6cff57",
         "opacity": 0.7,
         "width": 2
       },
@@ -118,3 +120,45 @@ particlesJS('particles-js',
   }
 
 );
+
+//Bideo 404 Background Video
+
+(function () {
+
+  var bv = new Bideo();
+  bv.init({
+    // Video element
+    videoEl: document.querySelector('#background_video'),
+
+    // Container element
+    container: document.querySelector('body'),
+
+    // Resize
+    resize: true,
+
+    // autoplay: false,
+
+    isMobile: window.matchMedia('(max-width: 768px)').matches,
+
+    playButton: document.querySelector('#play'),
+    pauseButton: document.querySelector('#pause'),
+
+    // Array of objects containing the src and type
+    // of different video formats to add
+    src: [
+      {
+        src: 'night.mp4',
+        type: 'video/mp4'
+      },
+      {
+        src: 'night.webm',
+        type: 'video/webm;codecs="vp8, vorbis"'
+      }
+    ],
+
+    // What to do once video loads (initial frame)
+    onLoad: function () {
+      document.querySelector('#video_cover').style.display = 'none';
+    }
+  });
+}());

@@ -12,6 +12,7 @@ ul, li, footer, header, nav {
   font-size:100%;
   vertical-align:baseline;
   background: transparent;
+  background-color: #111;
 }
 
 body {
@@ -114,9 +115,6 @@ nav {
 }
 
 #homeBtn:hover {
-  background-color: #0000;
-  position: absolute;
-  overflow: hidden;
   font-weight: 500;
 }
 
@@ -125,7 +123,6 @@ nav {
 }
 
 .headline {
-  text-align: center;
   overflow: hidden;
 }
 
