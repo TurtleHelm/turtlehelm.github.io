@@ -19,7 +19,6 @@
  - [x] Some Minor Improvements to Mobile Viewing (Adaptive & Flexible)  
 
 ## Oct 5th Changes:  
-- [x]
 
  ## Work in Progress:  
  - [ ] Removal of file extensions from URL  
