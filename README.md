@@ -15,6 +15,10 @@
  - [x] Move Project Links & Descriptions to Website for ease of use  
 
  ## Oct 4th Changes:  
+ - [x] Added Text Generator To Website  
+ - [x] Some Minor Improvements to Mobile Viewing (Adaptive & Flexible)  
+
+## Oct 5th Changes:  
 
  ## Work in Progress:  
  - [ ] Removal of file extensions from URL  
