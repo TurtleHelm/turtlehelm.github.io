@@ -53,7 +53,8 @@
 
     <!-- Script to Get response from AI -->
     <script>
-      deepai.setApiKey("");
+      require('dotenv').config()
+      deepai.setApiKey(process.env.DEEPAI_KEY);
 
       async function getText() {
                   try {
