@@ -1,4 +1,4 @@
-//Particle.JS 
+// Particle.JS 
 
 particlesJS('particles-js',
   

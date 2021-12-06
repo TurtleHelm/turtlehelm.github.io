@@ -12,8 +12,6 @@
  - [x] Added Text Generator To Website  
  - [x] Some Minor Improvements to Mobile Viewing (Adaptive & Flexible)  
 
-## Oct 5th Changes:  
-
  ## Work in Progress:  
  - [ ] Removal of file extensions from URL  
  - `https://turtlehelm.github.io/projects` Not `https://turtlehelm.github.io/projects.html`  
