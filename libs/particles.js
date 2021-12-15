@@ -1,4 +1,4 @@
-/* GitHub: https://www.github.com/VincentGarreau/particles.js
+/* GitHub: https://www.github.com/VincentGarreau/particles.js */
 
 var pJS = function(tag_id, params){
 
@@ -172,8 +172,6 @@ var pJS = function(tag_id, params){
     pJS.interactivity.modes.repulse.distance = pJS.tmp.obj.mode_repulse_distance * pJS.canvas.pxratio;
 
   };
-
-
 
   /* ---------- pJS functions - canvas ------------ */
 
@@ -1527,4 +1525,4 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   };
   xhr.send();
 
-};
+}};
