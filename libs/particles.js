@@ -1,11 +1,4 @@
-/* -----------------------------------------------
-/* Author : Vincent Garreau  - vincentgarreau.com
-/* MIT license: http://opensource.org/licenses/MIT
-/* Demo / Generator : vincentgarreau.com/particles.js
-/* GitHub : github.com/VincentGarreau/particles.js
-/* How to use? : Check the GitHub README
-/* v2.0.0
-/* ----------------------------------------------- */
+/* GitHub: https://www.github.com/VincentGarreau/particles.js
 
 var pJS = function(tag_id, params){
 
@@ -1400,18 +1393,13 @@ var pJS = function(tag_id, params){
 
 
 
-  /* ---------- pJS - start ------------ */
+  /*  ParticleJS - Start */
 
 
   pJS.fn.vendors.eventsListeners();
-
   pJS.fn.vendors.start();
-  
 
-
-};
-
-/* ---------- global functions - vendors ------------ */
+/* Global Functions - Vendors */
 
 Object.deepExtend = function(destination, source) {
   for (var property in source) {
@@ -1449,6 +1437,7 @@ window.cancelRequestAnimFrame = ( function() {
 function hexToRgb(hex){
   // By Tim Down - http://stackoverflow.com/a/5624139/3493650
   // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+
   var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   hex = hex.replace(shorthandRegex, function(m, r, g, b) {
      return r + r + g + g + b + b;
@@ -1470,7 +1459,7 @@ function isInArray(value, array) {
 }
 
 
-/* ---------- particles.js functions - start ------------ */
+/* ParticleJS Functions - Start */
 
 window.pJSDom = [];
 

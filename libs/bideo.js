@@ -1,12 +1,3 @@
-/**
- * Full Background Video
- *
- * More info on Audio/Video Media Events/Attributes/Methods
- * - https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events
- * - http://www.w3schools.com/tags/ref_av_dom.asp
- * - Github Link: https://github.com/rishabhp/bideo.js
- */
-
 (function (global) {
 
     // Define Bideo constructor on the global object

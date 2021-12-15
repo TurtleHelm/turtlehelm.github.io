@@ -1,7 +1,10 @@
 /* Imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
-html, body, div, 
+/* Elements */
+
+html, body, section, 
 span, h1, h2, h3, h4, 
 h5, h6, p, img, i, ol, 
 ul, li, footer, header, nav {
@@ -45,14 +48,11 @@ hr {
   padding: 0;
 }
 
-#particles-js {
-  width: 100%;
-  height: 105%;
-  background-color: #111;
-  background-size: fill;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.titleInfo input {
+  width: 200px;
 }
+
+/* Classes */
 
 .titleInfo {
   overflow: hidden;
@@ -68,10 +68,17 @@ hr {
   color: #fff;
 }
 
-.titleInfo input {
-  width: 200px;
-}
-
 .highlight {
   color: rgba(16,128,0);
+}
+
+/* IDs */
+
+#particles-js {
+  width: 100%;
+  height: 105%;
+  background-color: #111;
+  background-size: fill;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
