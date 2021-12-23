@@ -1,6 +1,6 @@
 // Particle.JS 
 
-particlesJS('particles-js',
+pJS('particles-js',
   
   {
     "particles": {
