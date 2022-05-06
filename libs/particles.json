@@ -8,7 +8,7 @@
       }},
 
     "color": {
-      "value": "#ffffff"
+      "value": "#e65100"
     },
 
     "shape": {
@@ -23,13 +23,13 @@
       },
 
       "image": {
-        "src": "img/github.svg",
+        "src": "",
         "width": 100,
         "height": 100
       }},
 
     "opacity": {
-      "value": 0.5,
+      "value": 0.7,
       "random": false,
       "anim": {
         "enable": false,
@@ -51,7 +51,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
+      "color": "#f57c00",
       "opacity": 0.4,
       "width": 1
     },

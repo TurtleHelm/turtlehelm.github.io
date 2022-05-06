@@ -1,4 +1,6 @@
-/* GitHub: https://www.github.com/VincentGarreau/particles.js */
+/* -----------------------------------------------
+/* GitHub : https://www.github.com/VincentGarreau/particles.js
+/* ----------------------------------------------- */
 
 var pJS = function(tag_id, params){
 
@@ -85,7 +87,7 @@ var pJS = function(tag_id, params){
       events: {
         onhover: {
           enable: true,
-          mode: 'repulse'
+          mode: 'grab'
         },
         onclick: {
           enable: true,
@@ -96,7 +98,7 @@ var pJS = function(tag_id, params){
       modes: {
         grab:{
           distance: 100,
-          line_linked:{
+          line_linked: {
             opacity: 1
           }
         },
@@ -172,6 +174,8 @@ var pJS = function(tag_id, params){
     pJS.interactivity.modes.repulse.distance = pJS.tmp.obj.mode_repulse_distance * pJS.canvas.pxratio;
 
   };
+
+
 
   /* ---------- pJS functions - canvas ------------ */
 
@@ -1391,13 +1395,18 @@ var pJS = function(tag_id, params){
 
 
 
-  /*  ParticleJS - Start */
+  /* ---------- pJS - start ------------ */
 
 
   pJS.fn.vendors.eventsListeners();
-  pJS.fn.vendors.start();
 
-/* Global Functions - Vendors */
+  pJS.fn.vendors.start();
+  
+
+
+};
+
+/* ---------- global functions - vendors ------------ */
 
 Object.deepExtend = function(destination, source) {
   for (var property in source) {
@@ -1435,7 +1444,6 @@ window.cancelRequestAnimFrame = ( function() {
 function hexToRgb(hex){
   // By Tim Down - http://stackoverflow.com/a/5624139/3493650
   // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
-
   var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   hex = hex.replace(shorthandRegex, function(m, r, g, b) {
      return r + r + g + g + b + b;
@@ -1457,7 +1465,7 @@ function isInArray(value, array) {
 }
 
 
-/* ParticleJS Functions - Start */
+/* ---------- particles.js functions - start ------------ */
 
 window.pJSDom = [];
 
@@ -1525,4 +1533,4 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
   };
   xhr.send();
 
-}};
+};
