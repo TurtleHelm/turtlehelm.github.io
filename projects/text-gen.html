@@ -3,72 +3,75 @@
   <head>
     <title>AI Powered Text Generator</title>
     <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="../imgs/favicon.ico"/>
-    <!-- DeepAI Script For AI -->
-    <script src="https://cdnjs.deepai.org/deepai.min.js"></script>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU' crossorigin='anonymous' />
+    <link rel='shortcut icon' type='image/x-icon' href='../imgs/favicon.ico'/>
+    <script src='https://cdnjs.deepai.org/deepai.min.js'></script> <!-- DeepAI -->
+    
+    <style>
 
-    <!--Css Stylesheet -->
-    <link rel="stylesheet" src="../css/text-gen.css" />
+      body, section.input-group > input.form-control { background-color: #111; }
+
+      #AIText {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+      }
+
+      #TitleText, #TitleParagraph {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+      }
+
+      section.box {
+        padding: 10px;
+        border-style: solid; 
+        border-color: #fff; 
+        border-radius: 4px;
+      }
+
+      section.box > h1#AIText, h1#TitleText, h1#TitleParagraph {
+        text-align: center; 
+        color: #fff;
+      }
+    </style>
+
   </head>
 
-  <body style="background-color: #111;">
+  <body>
     <!-- Styling Input & Submit Areas -->
-    <div class="input-group">
-      <input type="text" class="form-control rounded"
-        id="inputBox"
-        placeholder="Type your Words In Here"
-        style="background-color: #111;"/>
-      <input
-        class="btn btn-warning"
-        type="button"
-        onclick="getText()"
-        value="Submit"/>
-    </div>
+    <section class='input-group'>
+      <input type='text' class='form-control rounded' id='inputBox' placeholder='Type your Words In Here' />
+      <input class='btn btn-warning' type='button' onclick='getText()' value='Submit'/>
+    </section>
 
-    <section class="titleSection">
-        <h1 id="TitleText" style="text-align: center; color: #fff;">Welcome to Helm Writer</h1>
-        <h4 id="TitleParagraph" style="text-align: center; color: #fff;">
-            This is an AI Powered Text Generator. <br />Input some words or a sentence
+    <section class='titleSection'>
+        <h1 id='TitleText'>Welcome to Helm Writer</h1>
+        <h4 id='TitleParagraph'>
+            This is an AI Powered Text Generator. <br>Input some words or a sentence
             and click submit
         </h4>
     </section>
 
-    <br />
+    <br>
 
     <!-- Text Will Be Overwritten by Response from AI -->
-    <div class="box" style="padding: 10px; border-style: solid; border-color: #fff; border-weight: 200; border-radius: 4px;">
-        <h1 id="AIText"  style="text-align: center; color: #fff;">Text Will Appear Here...</h1>
-    </div>
+    <section class='box'><h1 id='AIText'>Text Will Appear Here...</h1></section>
 
-    <br>
-    <br>
+    <br><br>
+  
+    <input type='button' class='btn btn-outline-success' style='width: 200px; display: block; ' value='Go Back' onclick='window.location.href="https://turtlehelm.github.io/pages/projects"'/>
 
-    <input type="button" class="btn btn-outline-success" style="width: 200px; display: block; " value="Go Back" onclick="window.location.href='https://turtlehelm.github.io/pages/projects'"/>
-
-    <!-- Script to Get response from AI -->
-    <script>
+    <script> // Script to Get response from AI
       require('dotenv').config(); 
       deepai.setApiKey(process.env.DEEPAI_KEY);
 
       async function getText() {
         try {
-            document.getElementById("AIText").innerHTML = "Loading...";
-            var inputVal = document.getElementById("inputBox").value;
-
-            var response = await deepai.callStandardApi("text-generator", {
-                text: inputVal,
-            });
-            document.getElementById("AIText").innerHTML = response["output"];
-          //Error Handling
-        } catch(err) {
-            document.getElementById("AIText").innerHTML = "There seems to have been an error, please try again";
-        };
+            document.querySelector('#AIText').innerHTML = 'Loading...';
+            document.querySelector('#AIText').innerHTML = await deepai.callStandardApi('text-generator', { text: document.querySelector('#inputBox').value })['output'];
+        //Error Handling
+        } catch(err) { document.querySelector('#AIText').innerHTML = 'There seems to have been an error, please try again'; };
       }
     </script>
   </body>
