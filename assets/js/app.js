@@ -1,6 +1,16 @@
-// Particle.JS 
+// AOS
 
-particlesJS.load('particles-js', '../libs/particles.json');
+AOS.init();
+
+AOS.init({
+    offset: 120,
+    delay: 0,
+    duration: 700,
+    easing: 'ease',
+    once: false,
+    mirror: false,
+    anchorPlacement: 'top-bottom',
+});
 
 //Bideo 404 Background Video
 
@@ -24,19 +34,6 @@ particlesJS.load('particles-js', '../libs/particles.json');
 
     playButton: document.querySelector('#play'),
     pauseButton: document.querySelector('#pause'),
-
-    // Array of objects containing the src and type
-    // of different video formats to add
-    src: [
-      {
-        src: 'night.mp4',
-        type: 'video/mp4'
-      },
-      {
-        src: 'night.webm',
-        type: 'video/webm;codecs="vp8, vorbis"'
-      }
-    ],
 
     // What to do once video loads (initial frame)
     onLoad: function () {
