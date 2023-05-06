@@ -6,11 +6,11 @@
   --color-heading: #eef3db;
   --color-body: #b6cbce;
 
-  --color-base: #151119; /* 033f47 */
-  --color-base2: #111; /* #022a30 */
+  --color-base: #151119;
+  --color-base2: #111;
   
-  --color-brand: #8400FF; /* #e0f780 */
-  --color-brand2: #FF005A; /* #deff58 */
+  --color-brand: #8400FF;
+  --color-brand2: #FF005A;
 
   --sidebar-width: 240px;
   --font-base: "Bai Jamjuree";
