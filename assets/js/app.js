@@ -26,7 +26,7 @@ window.addEventListener('keydown', function(e) {
   switch(code) {
     case 'DEVIOUS': {
       this.window.removeEventListener('keydown', arguments.callee);
-      this.window.location.href = './assets/html/secret.html';
+      this.window.location.href = './assets/html/secret';
     }
   }
 }, false);
