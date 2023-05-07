@@ -148,7 +148,7 @@ img { width: 100%; }
 .social-icons a.la-github:hover { color: #fff; }
 
 .la-copyright {
-  transform: scaleX(-1);
-  -moz-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel="shortcut icon" type="image/x-icon" href='../../../../images/icon.ico'>
+        <title>Time Travel - Helm Labs V1: Projects</title>
+        <!-- BootStrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+  
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+            body {  
+                background: linear-gradient(45deg, #8400FF 0%,#151119 50%, #FF005A 100%); /* #57003f, #f57453 */
+                font-family: Ubuntu;
+                height: 100vh !important;
+                opacity: 0.8;
+            } 
+
+            #container {  
+                display: flex;  
+                justify-content: center;  
+                align-items: center;  
+                height: 98.4vh;
+            } 
+
+            #terminal {  
+                width: 80vw;  
+                height: 80vh;  
+                box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+            }
+
+            #terminal__bar {  
+                display: flex;  
+                width: 100%;  
+                height: 30px;  
+                align-items: center;  
+                padding: 0 8px;  
+                box-sizing: border-box;  
+                border-top-left-radius: 5px;  
+                border-top-right-radius: 5px;  
+                background: linear-gradient(#504b45 0%,#3c3b37 100%);
+            } 
+
+            #bar__buttons {  
+                display: flex;  
+                align-items: center;
+            } 
+
+            .bar__button {  
+                display: flex;  
+                justify-content: center;  
+                align-items: center;  
+                padding: 0;  
+                margin-right: 5px;  
+                font-size: 8px;  
+                height: 12px;  
+                width: 12px;  
+                box-sizing: border-box;
+                text-decoration: none;
+                color: #000;
+                border: none;  
+                border-radius: 100%;  
+                background: linear-gradient(#7d7871 0%, #595953 100%);  
+                text-shadow: 0px 1px 0px rgba(255,255,255,0.2);  
+                box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+            }
+            .bar__button:hover { cursor: pointer; }
+            .bar__button:focus { outline: none; }
+
+            #bar__button--exit {  
+                background: linear-gradient(#f37458 0%, #de4c12 100%);    
+                background-clip: padding-box;
+            }
+
+            #bar__user {   
+                color: #d5d0ce;  
+                margin-left: 6px;  
+                font-size: 14px;  
+                line-height: 15px;
+            } 
+
+            #terminal__body {  
+                background: rgba(56, 4, 40, 0.9);  
+                font-family: 'Ubuntu Mono';  
+                height: calc(100% - 30px);  
+                padding-top: 2px;  
+                margin-top: -1px;
+            }
+
+            @media (max-width: 600px) {  
+                #terminal {    
+                    max-height: 90%;    
+                    width: 90%;  
+                }
+            }
+
+            main {
+                height: 77vh;
+                overflow: auto;
+            }
+
+            #scroll {
+                background-color: #111;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main id="container">
+            <div id="terminal">
+                <!-- Terminal Bar -->       
+                <section id="terminal__bar">          
+                    <div id="bar__buttons"><a class="bar__button" id="bar__button--exit" href='turtlehelm.github.io/assets/html/secret'>&#10005;</a></div>
+                    <p id="bar__user">user@terminal: ~ Helm Labs V1</p>        
+                </section>
+                
+                <!-- Terminal Body --> 
+                <section id="terminal__body">
+                    <main>
+                        <section id='scroll'>
+
+                            <!-- Navbar -->
+                            <header class="d-flex justify-content-center py-3">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item"><a class="btn btn-outline-success" href='../index.html'>Home</a></li>
+                                    <li class="nav-item"><a href="../pages/projects.html" class="nav-link">Projects</a></li>
+                                    <li class="nav-item"><a href="../pages/socials.html" class="nav-link">Socials</a></li>
+                                </ul>
+                            </header>
+
+                            <section class='TitleCard' style='background-color: #111;'>
+                                <section class='px-4 py-5 text-center'>
+                                    <h1 class='display-5 fw-bold' style='color: #fff'>Projects</h1>
+                                    <section class='col-lg-6 mx-auto'>
+                                        <p class='lead mb-4' style='color: #fff'>This is a simplified List of Helms Prior Projects. For a full list Click The button Below</p>
+                                        <section class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                            <button type="button" class="btn btn-outline-success btn-lg px-4 gap-3" onclick="window.location.href='https://github.com/TurtleHelm'">Github Profile</button>
+                                        </section>
+                                    </section>  
+                                </section>
+                            </section>
+
+                            <section class="projectCards" style='background-color: #111;'>
+                                <section class="col-lg-7 p-3 p-lg-5 pt-lg-3 headline">
+                                    <h1 class="display-6 fw-bold lh-1 cardTitle" style="color: #fff;">AI Powered Text Generator</h1>
+                                    <p class="lead cardInfo" style="color: #fff;">An AI Powered Text Generator Using <a href="https://deepai.org/machine-learning-model/text-generator" style="text-decoration: none; font-weight: 500;">
+                                    Deepminds API.</a>  It Uses Javascript to request a json file from the API and parses it to display the result on screen. Play around with it below</p>
+                                    <section class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                                        <button type="button" class="btn btn-outline-success btn-lg px-4 fw-bold" onclick="window.location.href='../projects/text-gen.html'">Text Generator</button>
+                                    </section>
+                                </section>
+
+                                <hr>
+
+                                <section class="col-lg-7 p-3 p-lg-5 pt-lg-3 headline">
+                                    <h1 class="display-6 fw-bold lh-1 cardTitle" style="color: #fff;">D&D Character Generator</h1>
+                                    <p class="lead cardInfo" style="color: #fff;">A Simple D&D Character Generator using Python Dictionaries and The Random Module. 
+                                    You can make modules to add onto the base code in order to style it however you like.</p>
+                                    <section class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                                    <button type="button" class="btn btn-outline-success btn-lg px-4 fw-bold" onclick="window.location.href='https://github.com/TurtleHelm/DND-Character-Creator'">Github Link</button>
+                                    </section>
+                                </section>
+
+                                <hr>
+
+                                <section class="col-lg-7 p-3 p-lg-5 pt-lg-3 headline">
+                                    <h1 class="display-6 fw-bold lh-1" style="color: #fff;">Helm Labs Website</h1>
+                                    <p class="lead" style="color: #fff;">The purpose of this website is to display my portfolio! I will be updating it every time something new 
+                                    arrives on my github! Any Web based Applications will also be hosted from here so you can interact with them first hand.</p>
+                                    <section class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"></section>
+                                </section>
+                            </section>
+
+                            <footer class="py-3">
+                                <hr id="footerBar">
+                                <p class="text-muted text-center" id="copyright">© 2021 Helm Labs, Inc</p>
+                                <p class="text-muted text-center" id="copyright">Created By Helm</p>
+                            </footer>
+                        </section>
+                    </main>
+                </section>
+            </div>    
+        </main>
+
+        <!-- Scroll Reveal JS -->
+        <script>
+            ScrollReveal().reveal('.headlineTitle', { delay: 100 });
+            ScrollReveal().reveal('.headlineP', { delay: 500 });
+            ScrollReveal().reveal('.cardTitle', {delay: 100 });
+            ScrollReveal().reveal('.cardInfo', {delay: 500 });
+        </script>
+    </body>
+</html>

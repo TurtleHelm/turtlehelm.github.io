@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel="shortcut icon" type="image/x-icon" href='../../../../images/icon.ico'>
+        <title>Time Travel - Helm Labs V2</title>
+        <!-- Materialize (For Parallax) -->
+        <link type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css' />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+        <link rel='stylesheet' href='style.css'>
+  
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+            body {  
+                background: linear-gradient(45deg, #8400FF 0%,#151119 50%, #FF005A 100%); /* #57003f, #f57453 */
+                font-family: Ubuntu;
+                height: 100vh !important;
+                opacity: 0.8;
+            } 
+
+            #container {  
+                display: flex;  
+                justify-content: center;  
+                align-items: center;  
+                height: 98.4vh;
+            } 
+
+            #terminal {  
+                width: 80vw;  
+                height: 80vh;  
+                box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+            }
+
+            #terminal__bar {  
+                display: flex;  
+                width: 100%;  
+                height: 30px;  
+                align-items: center;  
+                padding: 0 8px;  
+                box-sizing: border-box;  
+                border-top-left-radius: 5px;  
+                border-top-right-radius: 5px;  
+                background: linear-gradient(#504b45 0%,#3c3b37 100%);
+            } 
+
+            #bar__buttons {  
+                display: flex;  
+                align-items: center;
+            } 
+
+            .bar__button {  
+                display: flex;  
+                justify-content: center;  
+                align-items: center;  
+                padding: 0;  
+                margin-right: 5px;  
+                font-size: 8px;  
+                height: 12px;  
+                width: 12px;  
+                box-sizing: border-box;
+                text-decoration: none;
+                color: #000;
+                border: none;  
+                border-radius: 100%;  
+                background: linear-gradient(#7d7871 0%, #595953 100%);  
+                text-shadow: 0px 1px 0px rgba(255,255,255,0.2);  
+                box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+            }
+            .bar__button:hover { cursor: pointer; }
+            .bar__button:focus { outline: none; }
+
+            #bar__button--exit {  
+                background: linear-gradient(#f37458 0%, #de4c12 100%);    
+                background-clip: padding-box;
+            }
+
+            #bar__user {   
+                color: #d5d0ce;  
+                margin-left: 6px;  
+                font-size: 14px;  
+                line-height: 15px;
+            } 
+
+            #terminal__body {  
+                background: rgba(56, 4, 40, 0.9);  
+                font-family: 'Ubuntu Mono';  
+                height: calc(100% - 30px);  
+                padding-top: 2px;  
+                margin-top: -1px;
+            }
+
+            @media (max-width: 600px) {  
+                #terminal {    
+                    max-height: 90%;    
+                    width: 90%;  
+                }
+            }
+
+            main {
+                height: 77vh;
+                overflow: auto;
+            }
+
+            #scroll {
+                background-color: #111;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main id="container">
+            <div id="terminal">
+                <!-- Terminal Bar -->       
+                <section id="terminal__bar">          
+                    <div id="bar__buttons"><a class="bar__button" id="bar__button--exit" href='turtlehelm.github.io/assets/html/secret'>&#10005;</a></div>
+                    <p id="bar__user">user@terminal: ~ Helm Labs V2</p>        
+                </section>
+                
+                <!-- Terminal Body --> 
+                <section id="terminal__body">
+                    <main>
+                        <section id='scroll'>
+                            <section class='section section-card'>
+                                <section class='row-container center'>
+                                    <h2 class='title text-primary'>Helm Labs</h2>
+                                    <p class='motto grey-text'>Problem Solving Since 2020</p>
+                                </section>
+                            </section>
+                            <section class='parallax-container'>
+                                <img src='./src/media/images/backgroundImages/background1.jpg'>
+                            </section>
+    
+                            <section class='section section-card'>
+                                <section class='row-container'>
+                                    <section class='center'>
+                                        <!-- <h2 class='header text-primary'><span class='scoreOut'>Software Developer</span> | Computer Nerd</h2> -->
+                
+                                        <section class='wrapper'>
+                                            <section class='static-text'>I'm a</section>
+                                            <ul class='dynamic-text'>
+                                                <li><a class='brackets'>&lt;\</a><span>Programmer</span><a class='brackets'>&gt;</a></li>
+                                                <li><a class='brackets'>&lt;\</a><span>Computer Nerd</span><a class='brackets'>&gt;</a></li>
+                                                <li><a class='brackets'>&lt;\</a><span>Software Engineer</span><a class='brackets'>&gt;</a></li>
+                                                <li><a class='brackets'>&lt;\</a><span>Teacher</span><a class='brackets'>&gt;</a></li>
+                                            </ul>
+                                        </section>
+                
+                                        <p class='grey-text motto'>"Programming is like building a car whilst you drive it. You never know what could happen"</p>
+                                    </section>
+                                </section>
+                            </section>
+
+                            <section class='parallax-container'>
+                                <img src='./src/media/images/backgroundImages/background2.jpg'>
+                            </section>
+
+                            
+                            <section class='section section-card'>
+                                <section class='row-container'>
+                                    <section>
+                                        <section class='center btn-wrapper'>
+                                            <h2 class='header text-primary'>View Portfolio</h2>
+                                            <a class='btn' href='turtlehelm.github.io'>{Time Travel}</a>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+
+                                        
+                            <section class='parallax-container'>
+                                <img src='./src/media/images/backgroundImages/background3.jpg'>
+                            </section>
+
+                            <!-- Footer -->
+                            <section class='footer center grey-text'><span class='copyleft'>©</span> Helm Labs, Inc 2022</section>
+
+                        </section>
+                    </main>
+                </section>
+            </div>    
+        </main>
+    </body>
+</html>

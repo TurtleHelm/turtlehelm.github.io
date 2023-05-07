@@ -12,32 +12,21 @@ AOS.init({
     anchorPlacement: 'top-bottom',
 });
 
-//Bideo 404 Background Video
+// Secret
 
-(function () {
+var code = '';
 
-  var bv = new Bideo();
+window.addEventListener('keydown', function(e) {
+  char = String.fromCharCode(e.keyCode || e.which);
 
-  bv.init({
-    // Video element
-    videoEl: document.querySelector('#background_video'),
+  if(e.keyCode == 8) code = code.slice(0, -1);
+  else if((e.keyCode > 64 && e.keyCode < 91) || e.keyCode == 32) code = (code+char).substr(-7);
+  else code = code;
 
-    // Container element
-    container: document.querySelector('body'),
-
-    // Resize
-    resize: true,
-
-    // autoplay: false,
-
-    isMobile: window.matchMedia('(max-width: 768px)').matches,
-
-    playButton: document.querySelector('#play'),
-    pauseButton: document.querySelector('#pause'),
-
-    // What to do once video loads (initial frame)
-    onLoad: function () {
-      document.querySelector('#video_cover').style.display = 'none';
+  switch(code) {
+    case 'DEVIOUS': {
+      this.window.removeEventListener('keydown', arguments.callee);
+      this.window.location.href = './assets/html/secret.html';
     }
-  });
-});
+  }
+}, false);
