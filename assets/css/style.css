@@ -151,7 +151,3 @@ img { width: 100%; }
     transform: scaleX(-1);
 
 }
-
-.navbar-toggler-icon {
-    background: var(--color-highlight);
-}
