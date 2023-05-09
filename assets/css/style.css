@@ -9,11 +9,11 @@
   --color-base: #151119;
   --color-base2: #111;
   
-  --color-brand: #8400FF;
-  --color-brand2: #FF005A;
+  --color-highlight: #FF005A;
 
   --sidebar-width: 240px;
   --font-base: "Bai Jamjuree";
+  --btn-hover-color: #bb0041;
 }
 
 /* Page Design */
@@ -35,10 +35,9 @@ a {
     transition: all 0.4s ease;
 }
 
-a:hover { color: var(--color-brand2); }
+a:hover { color: var(--btn-hover-color); }
 img { width: 100%; }
-
-.text-brand { color: var(--color-brand2); }
+.text-brand { color: var(--color-highlight); }
 .bg-base { background-color: var(--color-base); }
 
 .full-height {
@@ -53,7 +52,7 @@ img { width: 100%; }
 }
 
 .shadow-effect { transition: all 0.5s; }
-.shadow-effect:hover { box-shadow: 6px 6px 0 var(--color-brand2); }
+.shadow-effect:hover { box-shadow: 6px 6px 0 var(--color-highlight); }
 
 /* Navbar */
 
@@ -65,8 +64,8 @@ img { width: 100%; }
     color: #fff;
 }
 
-.navbar .nav-link:hover { color: var(--color-brand); }
-.navbar .nav-link.active { color: var(--color-brand); }
+.navbar .nav-link:hover { color: var(--color-highlight); }
+.navbar .nav-link.active { color: var(--color-highlight); }
 
 @media (min-width: 992px) {
     .navbar {
@@ -77,7 +76,7 @@ img { width: 100%; }
         background-position: center;
     }
 
-    .navbar-brand img { border: 8px solid var(--color-brand); }
+    .navbar-brand img { border: 8px solid var(--color-highlight); }
     #content-wrapper { padding-left: var(--sidebar-width); }
 }
 
@@ -88,14 +87,13 @@ img { width: 100%; }
 }
 
 .btn-brand {
-    background-color: var(--color-brand);
-    border-color: var(--color-brand);
+    background-color: var(--color-highlight);
     color: var(--color-base);
 }
 
 .btn-brand:hover,
 .btn-brand:focus {
-    background-color: #A300D6;
+    background-color: var(--btn-hover-color);
     color: var(--color-base);
 }
 
@@ -110,7 +108,7 @@ img { width: 100%; }
     content: "";
     width: 0%;
     height: 2px;
-    background-color: var(--color-brand2);
+    background-color: var(--color-highlight);
     position: absolute;
     left: 0;
     top: 110%;
@@ -151,4 +149,9 @@ img { width: 100%; }
     -moz-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+
+}
+
+.navbar-toggler-icon {
+    background: var(--color-highlight);
 }
