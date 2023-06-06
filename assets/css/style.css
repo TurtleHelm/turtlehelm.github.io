@@ -18,6 +18,24 @@
 
 /* Page Design */
 
+/* Get rid of scrollbar */
+::-webkit-scrollbar { display: none !important; }
+
+@media screen and (max-width: 425px) {
+    pre, code { width: 100% !important; }
+}
+
+@media screen and (max-width: 1440px) {
+    .footer-row { justify-content: space-evenly !important; }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-row {
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
 body {
     background-color: var(--color-base2);
     color: var(--color-body);

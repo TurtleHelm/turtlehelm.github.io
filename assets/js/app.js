@@ -1,7 +1,6 @@
 // AOS
 
 AOS.init();
-
 AOS.init({
     offset: 120,
     delay: 0,
@@ -12,21 +11,24 @@ AOS.init({
     anchorPlacement: 'top-bottom',
 });
 
-// Secret
+document.querySelector('.copyleft').innerHTML = `<i class='las la-copyright'></i> ${new Date().getFullYear()} Helm Labs`;
 
+// Secret
 var code = '';
 
 window.addEventListener('keydown', function(e) {
-  char = String.fromCharCode(e.keyCode || e.which);
+  var pattern = /^.$/;
 
-  if(e.keyCode == 8) code = code.slice(0, -1);
-  else if((e.keyCode > 64 && e.keyCode < 91) || e.keyCode == 32) code = (code+char).substr(-7);
-  else code = code;
+  if(e.key == 'Backspace') code = code.slice(0, -1);
 
-  switch(code) {
-    case 'DEVIOUS': {
-      this.window.removeEventListener('keydown', arguments.callee);
-      this.window.location.href = './assets/html/secret';
+  else if(pattern.test(e.key)) {
+    code = (code.length >= 7) ? '' : (code+e.key).substring(0, 7);
+
+    switch(code) {
+      case 'devious': {
+        this.window.location.href = './assets/html/secret';
+      }
     }
   }
+
 }, false);

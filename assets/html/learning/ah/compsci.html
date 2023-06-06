@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <title>Helm Edu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!-- imports -->
+    <link rel='stylesheet' href='../../../../assets/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='../../../../assets/css/aos.css'>
+    <link rel='stylesheet' href='../../../../assets/css/line-awesome.min.css'>
+    <link rel='stylesheet' href='../../../../assets/css/style.css'>
+    <link rel='stylesheet' href='./resources/prism/prism.css'>
+ 
+    <link rel="shortcut icon" type="image/x-icon" href='../../../../assets/images/icon.ico'>
+  </head>
+
+  <body data-bs-spy='scroll' data-bs-target='.navbar'>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mb-lg-4 mx-lg-auto" href="turtlehelm.github.io"><span class='h5 fw-bold'>Helm Edu</span></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#softwaredev">Software Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#webdev">Web Design</a></li>
+            <li class="nav-item"><a class="nav-link" href="#database">Databases</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="content-wrapper">
+
+      <section id='softwaredev' class='full-height'>
+        <div class="container">
+          <h1 class="text-brand">SOFTWARE DEVELOPMENT</h1>
+          
+          <div id='softwarenav'>
+            <div class="row">
+              <h5 data-aos='fade-up'>Contents</h5>
+              <div class="col-lg-8">
+                &nbsp;&nbsp;<a href='#softwaredev-datastruct' class='custom-link' data-aos='fade-right'>- Data Structures</a>
+                <br>
+                &nbsp;&nbsp;<a href='#softwaredev-oop' class='custom-link' data-aos='fade-right' data-aos-delay='300'>- Object Oriented Programming</a>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div id='datastruct'>
+
+            <h3 data-aos='fade-up' id='softwaredev-datastruct'>Data Structures</h3>
+
+            <div id='datastruct-navbar'>
+              <div class="row">
+                <h5 data-aos='fade-up' data-aos-delay='100'>Contents</h5>
+                <div class="col-lg-8">
+                  &nbsp;&nbsp;<a href='#2Darrays' class='custom-link' data-aos='fade-right'>- 2D Arrays</a>
+                  <br>
+                  &nbsp;&nbsp;<a href='#linkedlists' class='custom-link' data-aos='fade-right' data-aos-delay='300'>- Linked Lists</a>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div id='2Darrays'>
+              <div class="row gy-5">
+
+                <div class="row gy-4">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h4>What Are 2D Arrays?</h4>
+                      <p class="text-brand mb-2">Prior Knowledge: 1D Arrays</p>
+                      <p class='mb-0 text-wrap'>From Higher, you should have knowledge of a 1D Array, a simple list of entities from the same type.</p>
+                      <br>
+                      <p class='mb-0 text-wrap'>In Advanced Higher you need to know what a 2D array is and how to make one.</p>
+                      <br>
+                      <p class='mb-0 text-wrap'>A 2D Array is an array that has rows and columns, similar to a table of squares (as seen under)</p>
+                      <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/images/2darr-1.png" alt="2D Array Depiction" style='width: 30%; height: 30%;'></div>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                          A 2D Array has 2 indexes you can retrieve, the column index and the row index.
+                          The column index returns a 1D array at the specified index and the row index returns an item in the array at the specified index.
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>You Can Create a 2D Array Using the Following Code (Python)</p>
+                      <pre style='width: 320px;'><code class='lang-python'>[[i]*cols for i in range(rows)]</code></pre>
+                      <p class='mb-0 text-wrap'>You Can Obtain specific items from the array using code similar to below</p>
+                      <pre style='width: 320px;'><code class='lang-python'>slicedArray = array[col][row]</code></pre>
+                    </div>
+                  </div>
+                </div>
+
+                <div class='row'>
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h4>Traversing a 2D Array</h4>
+                      <p class="text-brand mb-2">Prior Knowledge: Loops</p>
+                      <p class='mb-0 text-wrap'>Along with knowing how to make 2D Arrays, you also have to be able to traverse them</p>
+                      <br>
+                      <p class='mb-0 text-wrap'>To traverse a 2D array, you can use a nested loop setup like the below code</p>
+                      <pre style='width: 60%; height: 100px;'><code class='lang-python'>for x in range(rows):
+  for y in range(cols):
+    array[x][y] = random.randint(0, 10)
+                      </code></pre>
+                      <p class='mb-0 text-wrap'>You can use this concept to print out the array 1 row at a time. When you print out the array outright you get the below output</p>
+                      <pre style='width: 60%; height: 80px;'><code class='lang-python'>print(array)
+> [[2,7,6,3],[2,7,6,3],[2,7,6,3],[2,7,6,3],[2,7,6,3]]
+                      </code></pre>
+                      <p class='mb-0 text-wrap'>But by traversing the array, you can either print out each row or each number in the row</p>
+                      <pre style='width: 60%; height: 100px;'><code class='lang-python'># Print Out Each Row
+for x in range(rows):
+  print(array[x])
+                      </code></pre>
+                      <pre style='width: 60%; height: 120px;'><code class='lang-python'># Print Out Each Number In Each Row
+for x in range(rows):
+  for y in range(cols):
+    print(array[x][y])
+                      </code></pre>
+                      <p class='mb-0 text-wrap'>NOTE: When Using An Array With an Undetermined Length, use the <code class='lang-python'>len(array)</code> to get the length instead</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class='row'>
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h3 class='text-center'>Summary</h3>
+                      <p class="text-brand mb-2">Prior Knowledge: 2D Arrays</p>
+                      <p class='mb-0 text-wrap'>To Summarise what you've just learned:</p>
+                      <ul>
+                        <li>2D Arrays are similar to a grid of squares, each column will return a 1D array of values</li>
+                        <li>A 2D Array can be indexed with 2 indices, i.e <code class='lang-python'>arr[x][y]</code></li>
+                        <li>You can traverse a 2D array using a nested loop setup</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <hr>
+            
+            <div id='linkedlists'>
+              <div class="row gy-5">
+
+                <div>
+                  <h6 class='text-brand mb-2 text-wrap' data-aos='fade-up' data-aos-delay='100'>NOTE: This is Theory and there's no code to go with this in AH, but it will come up in the exam</h6>
+
+                  <div class="row gy-4">
+                    <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='300'>
+                      <div class="bg-base p-4 rounded-4 shadow-effect">
+                        <h4>What's a Linked List?</h4>                    
+                        <p class="text-brand mb-2">Prior Knowledge: Dynamic List Items (Basic)</p>
+                        <p class='mb-0 text-wrap'>A linked list is what's considered a dynamic data structure</p>
+                        <ul>
+                          <li>Linked Lists Store Information in nodes</li>
+                          <li>Linked Lists Have No Fixed Size</li>
+                        </ul>
+                        <p class='mb-0 text-wrap'>
+                          Linked Lists Are Different To Arrays as Arrays create copies of themselves with the new sizing, which could cause all sorts of memory and processor problems
+                        </p>
+                        <hr>
+                        
+                        <h5>Nodes</h5>
+
+                        <p class='mb-0 text-wrap'>A node is like a box with 3 compartments</p>
+                        <ol>
+                          <li>Memory Address - The memory address the node is stored at</li>
+                          <li>Data Item - The item of data the node holds</li>
+                          <li>Next Pointer - The memory address of the next node in the list</li>
+                        </ol>
+                        <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/images/linked-list-1.png" alt="Single Node Depiction" style='width: 30%; height: 30%'></div>
+                        <br>
+                        <p class='mb-0 text-wrap'>The start of each list is called the <b>head</b> and the ending nodes next pointer is always <b>null</b></p>
+                        <p class='mb-0 text-wrap'>An Example of a Single Linked List is shown below</p>
+                        <br>
+                        <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/images/linked-list-2.png" alt="Single Node Depiction"></div>
+                        <br>
+                        <p class='mb-0 text-wrap'><b>Some More Information About Linked Lists</b></p>
+                        <ul>
+                          <li>A Linked List can store multiple types of data, not being excluded to 1 like arrays</li>
+                          <li>A linked list can only be traversed from head to tail (the null pointer node), usually until the data is found</li>
+                          <li>Inserting information into a linked list is more efficient than an array because:</li>
+                          <ul><li>
+                            When inserting or deleting information, only the pointer is changed compared to arrays which shift the information into different memory locations
+                          </li></ul>
+                        </ul>
+                        
+                        <p class='mb-0 text-wrap'><b>Insertion of Information Into Linked Lists</b></p>
+                        <p class='mb-0 text-wrap'>To insert new information into a linked list, you need to:</p>
+                        <ol>
+                          <li>Create a new node in memory</li>
+                          <li>Find the Null Pointer Node</li>
+                          <li>Update the pointers for the null pointer node to point to the new nodes memory location</li>
+                          <li>Set the new nodes pointer to null and add the new information</li>
+                        </ol>
+
+                        <p class='mb-0 text-wrap'><b>Deletion of Information Into Linked Lists</b></p>
+                        <p class='mb-0 text-wrap'>To delete information from a linked list, you need to:</p>
+                        <ol>
+                          <li>find the memory location of the node to delete</li>
+                          <li>Go through the list until you find the node</li>
+                          <li>Update the pointers for the node ahead and behind the deleted node to point to the nearest nodes memory location</li>
+                        </ol>
+
+                        <p class='mb-0 text-wrap'><b>Linked List Operations</b></p>
+                        <ul>
+                          <li>Adding a new node at the end</li>
+                          <ul><li>The pointer of the last node will have to point ot the newly created node</li></ul>
+                          <li>Inserting Between Exisitng Nodes</li>
+                          <ul><li>When the new node is added then the pointer of the top and bottom nodes are changed accordingly</li></ul>
+                          <li>Deleting Nodes</li>
+                          <ul><li>The point of the previous node before the deleted node is changed to the next node in the list</li></ul>
+                          <li>Traversing Lists</li>
+                          <ul><li>Each node has been visited and the pointer followed to the address of the next node</li></ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='300'>
+                      <div class="bg-base p-4 rounded-4 shadow-effect">
+                        <h4>What's a Double Linked List?</h4>
+                        <p class="text-brand mb-2">Prior Knowledge: Dynamic List Items (Basic)</p>
+                        <p class='mb-0 text-wrap'>A double linked list is similar to a single linked list but it stores the previous nodes memory position on top of the ahead node</p>
+                        <p class='mb-0 text-wrap'>An example of a double linked node is shown below</p>
+                        <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/images/linked-list-3.png" alt="Single Node Depiction" style='width: 40%; height: 40%'></div>
+                        <br>
+                        <p class='mb-0 text-wrap'>And below this is an example of a double linked list, showing the connections between each node</p>
+                        <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/images/linked-list-4.png" alt="Single Node Depiction"></div>
+                        <br>
+                        <p class='mb-0 text-wrap'>
+                          Insertion & Deletion of Information is almost identical as in a single linked list but now you have to update the previous node memory locations as well
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class='row' data-aos='fade-up' data-aos-delay='600'>
+                  <div class='bg-base p-4 rounded-4 shadow-effect'>
+                    <h3 class='text-center'>To Conclude Linked Lists</h3>
+                    <ul>
+                      <li><b>Single</b></li>
+                      <ul>
+                        <li>Nodes have 3 fields: its memory address, the data held and the memory address of the next node in the list</li>
+                        <li>The end nodes next pointer will be null</li>
+                      </ul>
+                      
+                      <li><b>Double</b></li>
+                      <ul>
+                        <li>Nodes have 4 fields: its memory address, the data held, the mem. addr. of the previous node and the mem. addr. of the next node in the list</li>
+                        <li>The start nodes previous node pointer will be null and the end nodes next pointer will be null as well</li>
+                      </ul>
+                    </ul>
+
+                    <h4>Advantages & Disadvantages</h4>
+
+                    <ul>
+                      <li><b>Advantages</b></li>
+                      <ul>
+                        <li>Linked lists are much more efficient in terms of memory and processing, especially when manipulating data</li>
+                        <li>Inserting, deleting or reordering only requires pointer info to change</li>
+                      </ul>
+
+                      <li><b>Disadvantages</b></li>
+                      <ul>
+                        <li>Cannot index a particular node of a single linked list in an array, you have to go through each node item until you find the one you need</li>
+                        <li>Requires storing additional info (pointer memory locations)</li>
+                        <li>Nodes may not be stored in adjacent areas of RAM</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div id='oop'>
+            
+            <h3 data-aos='fade-up' id='softwaredev-oop'>Object Oriented Programming</h3>
+
+            <div id='oop-navbar'>
+              <div class="row">
+                <h5 data-aos='fade-up' data-aos-delay='100'>Contents</h5>
+                <div class="col-lg-8">
+                  &nbsp;&nbsp;<a href='#classes' class='custom-link' data-aos='fade-right'>- Objects & Methods</a>
+                  <br>
+                  &nbsp;&nbsp;<a href='#classproperties' class='custom-link' data-aos='fade-right' data-aos-delay='600'>- Inheritance & Polymorphism</a>
+                  <br>
+                  &nbsp;&nbsp;<a href='#standardalgo' class='custom-link' data-aos='fade-right' data-aos-delay='600'>- Standard Algorithms</a>
+                  <br>
+                  &nbsp;&nbsp;<a href='#eval' class='custom-link' data-aos='fade-right' data-aos-delay='600'>- Evaluation</a>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div id='classes'>
+              <div class="row gy-5">
+
+                <div class="row gy-4">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h4>What Are Classes?</h4>
+                      <p class="text-brand mb-2">Prior Knowledge: Records, Functions & Procedures</p>
+                      <p class='mb-0 text-wrap'>
+                        From Higher, you should have knowledge on a Record, a simple structure used to help container-ise your project.
+                        And on functions & procedures, which allow you to package up sections of code to run in a different part of your program.
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>In Advanced Higher you need to know what a class and an object is and how to create and manipulate its properties</p>
+                      <br>
+                      <p class='mb-0 text-wrap'>A class is difficult to describe so a better way to explain it is to use an example, so lets use the example of a bicycle</p>
+                      <br>
+                      <p class='mb-0 text-wrap'>All bicycles have the same base attributes and functions, whilst there are different types of bicycles they all share the same base</p>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        The same can be said for classes. There can be a base class with attributes and <b>methods</b> used in different <b>subclasses</b> 
+                        but each subclass can have its own unique set of functions
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>This is how a class is declared in python</p>
+                      <code class='lang-python'>class Bicycle:</code>
+                      <p class='mb-0 text-wrap'>You can assign values to a class using an initialisation (or constructor) method, in python this is: <code class='lang-python'>def __init__()</code></p>
+                      <br>
+                      <p class='mb-0 text-wrap'>Putting this all together, lets add some properties to our bicycle class</p>
+                      <pre style='width: 50%; height: 180px;'><code class='lang-python'>class Bicycle:
+def __init__(self, bikeGear, bikeSpeed, bikeColor):
+  '''This runs when we instantiate a new class instance'''
+  self.bikeGear = bikeGear
+  self.bikeSpeed = bikeSpeed
+  self.bikeColor = bikeColor
+                      </code></pre>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        Now that we've assigned out values, whenever we instantiate (make a duplicate of) the class, 
+                        we can assign unique values to these variables and retrieve them when needed, an example is shown below
+                      </p>
+
+                      <pre style='width: 50%; height: 100px;'><code class='lang-python'>variable = Bicycle(5, 3, 'Green')
+print(variable.bikeColor)
+> Green
+                      </code></pre>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        Now what we've done there is create an instance of the Bicycle class
+                        and assigned its variables 3 distinct values, then printed out one of those values 
+                        to the console to test if it was working as intended.
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>This instance is called an <b>Object</b>.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h4>Methods... Isn't that Just Functions?</h4>
+                      <p class="text-brand mb-2">Prior Knowledge: Functions & Procedures</p>
+                      <p class='mb-0 text-wrap'>
+                        Methods are functions & procedures within classes that can't be called without referring to an 
+                        instance of that class or the class itself (in very rare circumstances)
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>There are 3 main methods in classes:</p>
+                      <ol>
+                        <li>Constructor Methods</li>
+                        <li>Getter Methods</li>
+                        <li>Setter Methods</li>
+                      </ol>
+
+                      <p class='mb-0 text-wrap'>
+                        NOTE: When we get further into this topic, it's useful to know you can <b>override</b> methods
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        Lets take our bicycle example from below and add some methods to it. Lets add a method to 
+                        return the current gear and a method to change the gear on the bike
+                      </p>
+                      <pre style='width: 50%; height: 200px;'><code class='lang-python'>class Bicycle:
+# previous code above
+
+def GetGear(self, newGear): return self.bikeGear
+
+def SetGear(self, newGear):
+  self.bikeGear = newGear
+                      </code></pre>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        Now you might be wondering why we're not just setting the gear and speed variables directly, 
+                        and this is because of something called <b>Encapsulation</b>.
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        Encapsulation helps limit direct access to (possibly sensitive) variables inside of classes, by using methods such as those above it funnels
+                        the usage of these variables to (usually) 2 routes, and those are called <b>getters</b> and <b>setters</b>, denoted most commonly by their 'Set' or 'Get' 
+                        prefixes on functions or procedures.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h3 class='text-center'>Summary</h3>
+                      <p class="text-brand mb-2">Prior Knowledge: Classes & Methods</p>
+                      <p class='mb-0 text-wrap'>
+                        To Summarise the above 2 sections:
+                      </p>
+                      <ul>
+                        <li>Classes - A type used to store information specific to an entity. Creating a new copy of the class is called <b>Instantiation</b></li>
+                        <li>Classes Use - Classes can store both values and functions or procedures, called methods</li>
+                        <li>Methods - A method can only be called when using an instance of that class or the class itself</li>
+                        <li>Constructor Method - A special method used when a new class instance is made, setting up the unique values for this instance</li>
+                        <li>Getters & Setters - Special methods used to block unwanted access to variables within classes</li>
+                        <li>Object - An object is an instance of any class and can be stored like a variable</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <hr>
+
+            <div id='classproperties'>
+              <div class="row gy-5">
+
+                <div class="row gy-4">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h4>Inheritance? I thought this was a Comp Sci Course</h4>
+                      <p class="text-brand mb-2">Prior Knowledge: Classes, Objects</p>
+                      <p class='mb-0 text-wrap'>
+                        In the previous sections we've covered classes and how to make them, we've also covered the 3 main types of methods, there are a few things left to do with classes
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        When using classes, some classes will end up with similar or identical methods, 
+                        so to make things cleaner you can have subclasses, that <b>inherit</b> methods from a parent class
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>Using our example from before, lets create a new subclass called 'MountainBike' that inherits from the base Bicycle class</p>
+                      <pre style='height: 140px; width: 50%;'><code class='lang-python'>class MountainBike(Bicycle): # Inherits from Base Class
+def __init__(self, bikeGear, bikeSpeed, bikeColor):
+  # A way of calling the base class constructor
+  super().__init__(bikeGear, bikeSpeed, bikeColor)
+                      </code></pre>
+                      <p class='mb-0 text-wrap'>
+                        And now when we initialise the MountanBike subclass by default it'll ask us to provide it with values for the 3 variables in the parent Bicycle class.
+                        The MountainBike subclass will also have the same methods as the parent class, those being 'GetGear' and 'SetGear'.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h4>Polywhatsit?</h4>
+                      <p class="text-brand mb-2">Prior Knowledge: Classes, Objects, Inheritance</p>
+                      <p class='mb-0 text-wrap'>
+                        Finally, for the coding part. There's polymorphism. Polymorphism is a key term used to describe when classes 
+                        have the same methods that do different things, also known as overridden methods. This follows on from inheritance
+                        by changing a base methods programming.
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>For example, lets say our Bicycle class had a method that calculated distance based on wheel turns per minute</p>
+                      <pre style='width: 50%; height: 110px;'><code class='lang-python'>class Bicycle:
+def CalculateSpeed(self, wheelturns): 
+return self.bikeSpeed * wheelturns
+                      </code></pre>
+                      <br>
+                      <p class='mb-0 text-wrap'>And out MountainBike subclass had the same method but calculated distance based on the force exerted on the pedals per minute</p>
+                      <pre style='width: 50%; height: 110px;'><code class='lang-python'>class MountainBike(Bicycle):
+def CalculateSpeed(self, pedalPressure): 
+return self.bikeSpeed * pedalPressure
+                      </code></pre>
+                      <br>
+                      <p class='mb-0 text-wrap'>Or If you're simply changing the variable used, you can use the below code (A bit more advanced)</p>
+                      <pre style='width: 50%; height: 110px;'><code class='lang-python'>class MountainBike(Bicycle):
+def CalculateSpeed(self, pedalPressure):
+return super().CalculateSpeed(pedalPressure)
+                      </code></pre>
+                      <br>
+                      <p class='mb-0 text-wrap'>That's polymorphism. 2 of the same methods, but the subclass method is different to the base class method.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h3 class='text-center'>Summary</h3>
+                      <p class="text-brand mb-2">Prior Knowledge: Inheristnace, Polymorphism</p>
+                      <p class='mb-0 text-wrap'>To Summarise:</p>
+                      <ul>
+                        <li>Inheritance - A subclass can inherit variables and methods from a base/parent class</li>
+                        <li>Polymorphism - A subclass can override methods and variables which allows for 2 of the same method to do different things</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+
+            <hr>
+
+            <div id='standardalgo'>
+              
+              <div class="row gy-5">
+
+                <div class="row gy-4">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <h4 id='softwaredev-algo'>There's More Standard Algorithms?!</h4>
+                      <p class="text-brand mb-2">Prior Knowledge: Higher Algorithms</p>
+                      <p class='mb-0 text-wrap'>Yep, 3 more in AH. Those Are:</p>
+                      <ul>
+                        <li>Insertion Sort</li>
+                        <li>Bubble Sort</li>
+                        <li>Binary Search</li>
+                      </ul>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        When Sorting Lists or Arrays in computing, speed is key. So computer scientists devised many different types of sorting algorithms, each with their own speed (usually depicted with an O).
+                        You don't need to know what's called Big O Notation yet (mainly because its maths) but keep the symbol in mind when continuing.
+                      </p>
+                      <br>
+                      <p class='mb-0 text-wrap'>
+                        Lets start with Bubble Sort, In my opinion the easiest to understand. Bubble sort sorts algorithms by comparing the 2 adjacent values in the array, 
+                        swapping them if the 1st is bigger than the 2nd they're swapped. You'll need to know how to write each algorithm in pseudocode so I'll provide both below
+                      </p>
+                      <pre style='width: 50%; height: 270px;'><code class='lang-css'>/* Pseudocode */
+FOR i FROM length-2 TO 0 STEP -1 DO
+FOR counter FROM 0 TO i DO
+  IF list[counter] > list[counter+1] THEN
+    SET temp TO list[counter+1]
+    SET list[counter+1] TO list[counter]
+    SET list[counter] TO temp
+  END IF
+END FOR
+END FOR
+                      </code></pre>
+                      <pre style='width: 50%; height: 180px;'><code class='lang-python'># Python
+for i in range(len(arr)-1, 0, -1):
+for j in range(i):
+  if arr[j] > arr[j+1]:
+    # This line is the same as the 3 pseudocode lines
+    arr[j], arr[j+1] = arr[j+1], arr[j]
+                      </code></pre>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <div id='polymorphism'>
+                        <h4>Standard Algorithms Continued</h4>
+                        <p class="text-brand mb-2">Prior Knowledge: Higher Algorithms</p>
+                        <p class='mb-0 text-wrap'>The 2nd Standard Algorithm you must learn is Insertion Sort. This one is a little trickier to understand</p>
+                        <br>
+                        <p class='mb-0 text-wrap'>
+                          Insertion sort holds a value to start (usually index 0) and compares it to every other value in the array/list.
+                          Then it finds an element bigger than itself it inserts itself just before it. Then it stores the next index value
+                        </p>
+                        <pre style='width: 50%; height: 270px;'><code class='lang-css'>/* Pseudocode */
+FOR index = 1 TO length(list)-1 DO
+SET currentValue TO list[index]  
+SET position TO index
+
+WHILE position > 0 AND list[position-1] > currentValue DO
+  SET list[position] TO list[position-1]
+  SET position TO position - 1
+END WHILE
+END FOR
+                        </code></pre>
+                        <pre style='width: 50%; height: 280px;'><code class='lang-python'># Python 
+for index in range(1, len(arr)):
+currentValue = arr[index]
+pos = index
+
+while position > 0 and arr[pos-1] > currentValue:
+  arr[pos] = arr[pos-1]
+  pos -= 1
+
+arr[pos] = currentValue
+                        </code></pre>
+
+                        <hr>
+                        <p class='mb-0 text-wrap'>Finally we have binary search, which requires a sorted list/array to function</p>
+                        <p class='mb-0 text-wrap'>
+                          Binary search splits an array into 2 separate pieces and searches each one, 
+                          if it doesn't find it it, it checks the number being searched and splits the array which has the closest value to it.
+                          It keeps going until the number is found
+                        </p>
+
+                        <pre style='width: 50%; height: 440px;'><code class='lang-css'>/* Pseudocode */
+SET found TO False 
+SET start TO 0
+SET end TO LENGTH(arr)-1
+RECEIVE goal FROM (INTEGER) KEYBOARD
+
+WHILE(start <= end) AND found == FALSE DO 
+SET mid TO INTEGER((start+end)/2)
+
+IF arr[mid] == goal THEN
+  SET found TO True 
+ELSE IF arr[mid] < goal THEN 
+  SET start TO mid+1
+ELSE
+  SET end TO mid-1
+END IF
+END WHILE
+                        </code></pre>
+                        <pre style='width: 50%; height: 280px;'><code class='lang-python'># Python
+found = False 
+start, end = (0, len(arr)-1)
+
+while (start <= end) and found == False:
+mid = (start+end)//2
+
+if arr[mid] == goal: found = True
+elif arr[mid] < goal: start = mid+1
+else: end = mid-1
+                        </code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                      <div id='polymorphism'>
+                        <h4>Summary</h4>
+                        <p class="text-brand mb-2">Prior Knowledge: Standard Algorithms</p>
+                        <p class='mb-0 text-wrap'>To Summarise</p>
+                        <ul>
+                          <li>Bubble Sort - Sorts By Comparing 2 value together and swapping if the 2nd is bigger</li>
+                          <li>Insertion Sort - Sorts By comparing 1 value to all others and once its found a bigger value, inserts itself behind it</li>
+                          <li>Binary Search - Searches a List/Array To find a value by splitting the list/array in 2 then traversing each, continuing to until a value is found</li>
+                        </ul>
+                        <br>
+                        <p class='mb-0 text-wrap'>
+                          At least 1 of these algorithms will come up in the exam, so memorise all 3 to be safe. Usually questions ask you to fill in the blanks in an algorithm and then final question 
+                          is usually you constructing one of the algorithms from scratch for more marks (in my exam it was 6 and the algorithm was insertion sort).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div id='eval'>
+              <div class="row gy-4">
+
+                <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4 id='softwaredev-algo'>Evaluation? Didn't we just do that?</h4>
+                    <p class="text-brand mb-2">Prior Knowledge: Software Development Cycle</p>
+                    <p class='mb-0 text-wrap'>
+                      When constructing software, you need to be able to evaluate certain aspects to check if the program works as intended.
+                      These are listed below
+                    </p>
+                    <ul>
+                      <li>Fitness for Purpose</li>
+                      <li>Efficiency</li>
+                      <li>Usability</li>
+                      <li>Maintainability</li>
+                      <li>Robustness</li>
+                    </ul>
+                    <br>
+                    <p class='mb-0 text-wrap'>
+                      You may have seen some of these terms before in higher, some might not have. So let's do some quick bullet points to sum up each one
+                    </p>
+                    <br>
+                    <p class='mb-0 text-wrap'>Fitness for Purpose</p>
+                    <ul>
+                      <li>Fitness for Purpose Establishes whether or not your program meets all <b>user and functional requirements</b> in the specification</li>
+                      <li>Any omissions from the specification should be listed in this section</li>
+                      <li>An example:</li>
+                      <ul>
+                        <li>Optional Requirements</li>
+                        <li>Any requirement that's met but there's perhaps an issue with</li>
+                      </ul>
+                    </ul>
+
+                    <br>
+                    <p class='mb-0 text-wrap'>Maintainability</p>
+                    <ul>
+                      <li><b>Perfective Maintenance</b> - Happens in response to user requests for new features or to streamline code, should be identifiable in testing</li>
+                      <li><b>Corrective Maintenance</b> - Happens in response to discovering errors in the software, possibly from user reports, this should flag up in testing</li>
+                      <li><b>Adaptive Maintenance</b> - Happens in response to switching platforms or os versions, i.e adapting a windows 7 program to run in windows 10</li>
+                    </ul>
+                    
+                    <br>
+                    <p class='mb-0 text-wrap'>
+                      <b>Usability</b> - As part of the design and testing you should conduct usability testing, 
+                      its used to check how easy it is to navigate and use your program, for example: how intuitive your UI is in a mobile application.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </section>
+
+      <section id='database' class='full-height px-lg-5' style='min-height: 0vh !important;'>
+        <div class='container'>
+          <h1 class='text-brand'>DATABASES</h1>
+
+          <div id='dbnav'>
+            <div class="row">
+              <h5 data-aos='fade-up'>Contents</h5>
+              <div class="col-lg-8">
+                &nbsp;&nbsp;<a href='#db-design' class='custom-link' data-aos='fade-right'>- Data Structures</a>
+                <br>
+                &nbsp;&nbsp;<a href='#database-implementation' class='custom-link' data-aos='fade-right' data-aos-delay='300'>- Object Oriented Programming</a>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+
+
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="py-5 px-lg-5">
+      <div class="container">
+        <div class="row gy-4 justify-content-around footer-row">
+          <div class="col-lg-auto">
+            <p class="mb-0 copyleft"><i class='las la-copyright'></i> Helm Labs</p>
+          </div>
+
+          <div class='col-lg-auto'>
+            <a class='custom-link' href='https://sites.google.com/rgc.aberdeen.sch.uk/rgcahcomputingrevision/'>More Learning Materials</a>
+          </div>
+
+          <div class="col-lg-auto">
+            <div class="social-icons">
+              <a href="https://github.com/TurtleHelm" class="lab la-github"></a>
+              <a href="https://www.youtube.com/playlist?list=PL6KwY7S-X9DBDD_09QcO_5Uabls2fXpH4" class="lab la-youtube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src='../../../../assets/js/bootstrap.bundle.min.js'></script>
+    <script src='../../../../assets/js/aos.js'></script>
+    <script src='./resources/prism/prism.js'></script>
+    <script>
+        // AOS
+      AOS.init();
+      AOS.init({
+          offset: 120,
+          delay: 0,
+          duration: 700,
+          easing: 'ease',
+          once: false,
+          mirror: false,
+          anchorPlacement: 'top-bottom',
+      });
+
+      document.querySelector('.copyleft').innerHTML = `<i class='las la-copyright'></i> ${new Date().getFullYear()} Helm Labs`;
+    </script>
+</body>
+</html>
