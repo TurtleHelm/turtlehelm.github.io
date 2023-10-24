@@ -1,113 +1,130 @@
 /* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono'); 
 
 body {  
-    background: linear-gradient(45deg, #8400FF 0%,#151119 50%, #FF005A 100%);
-    height: 100vh;
-    font-family: Ubuntu;
+	background: linear-gradient(45deg, #8400FF 0%,#151119 50%, #FF005A 100%);
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	opacity: 0.8;
 } 
 
+::-webkit-scrollbar { display: none; } /* Get rid of scrollbar */
+
 .titleInfo {
-  position: absolute;
-  font-size: 75px;
-  text-align: center;
-  z-index: 1;
-  font-family: 'Oswald', sans-serif;
-  color: #fff;
-  bottom: 10vh;
-  height: 60vh;
-  width: 80vw;
+	position: absolute;
+	font-size: 75px;
+	text-align: center;
+	z-index: 1;
+	font-family: 'Oswald', sans-serif;
+
+	color: #fff;
+	bottom: 10vh;
+	height: 60vh;
+	width: 80vw;
 }
 
-a { width: 200px; }
+main {
+	height: 77vh;
+	overflow: auto;
+}
+
+#TitleText { font-weight: bold; }
 
 #container {  
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
-  height: 98.4vh;
-}
-
-#terminal {  
-  width: 80vw;  
-  height: 80vh;  
-  box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+	display: flex;  
+	justify-content: center;  
+	align-items: center;  
+	height: 98.4vh;
 }
 
 #particles-js {
-  width: 80vw;  
-  height: 77vh;
-  background: #111;
-  opacity: 0.6;
+	width: 80vw;  
+	height: 77vh;
+	background: #111;
+	opacity: 0.6;
+}
+
+/* Terminal */
+
+#terminal {  
+	width: 80vw;  
+	height: 80vh;  
+	box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
 }
 
 #terminal__bar {  
-  display: flex;  
-  width: 100%;  
-  height: 30px;  
-  align-items: center;  
-  padding: 0 8px;  
-  box-sizing: border-box;  
-  border-top-left-radius: 5px;  
-  border-top-right-radius: 5px;  
-  background: linear-gradient(#504b45 0%,#3c3b37 100%);
+	display: flex;  
+	width: 100%;  
+	height: 30px;  
+	align-items: center;  
+	padding: 0 8px;  
+	box-sizing: border-box;  
+	border-top-left-radius: 5px;  
+	border-top-right-radius: 5px;  
+	background: linear-gradient(#504b45 0%,#3c3b37 100%);
 } 
 
 #bar__buttons {  
     display: flex;  
     align-items: center;
-} 
+}  
 
 .bar__button {  
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
-  padding: 0;  
-  margin-right: 5px;  
-  font-size: 8px;  
-  height: 12px;  
-  width: 12px;  
-  box-sizing: border-box;
-  text-decoration: none;
-  color: #000;
-  border: none;  
-  border-radius: 100%;  
-  background: linear-gradient(#7d7871 0%, #595953 100%);  
-  text-shadow: 0px 1px 0px rgba(255,255,255,0.2);  
-  box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+	display: flex;  
+	justify-content: center;  
+	align-items: center;  
+	padding: 0;  
+	margin-right: 5px;  
+	font-size: 8px;  
+	height: 12px;  
+	width: 12px;  
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #000;
+	border: none;  
+	border-radius: 100%;  
+	background: linear-gradient(#7d7871 0%, #595953 100%);  
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.2);  
+	box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
 }
 
 .bar__button:hover { 
-  cursor: pointer;
-  color: #111;
+	cursor: pointer;
+	color: #111;
 }
 
+.bar__button:focus { outline: none; }
+
 #bar__button--exit {  
-  background: linear-gradient(#f37458 0%, #de4c12 100%);    
-  background-clip: padding-box;
+	background: linear-gradient(#f37458 0%, #de4c12 100%);    
+	background-clip: padding-box;
 }
 
 #bar__user {   
-  color: #d5d0ce;  
-  margin-left: 6px;  
-  font-size: 14px;  
-  line-height: 15px;
+	color: #d5d0ce;  
+	margin-left: 6px;  
+	font-size: 14px; 
+	line-height: 15px;
 } 
 
 #terminal__body {  
-  background: rgba(56, 4, 40, 0.9);  
-  font-family: 'Ubuntu Mono';  
-  height: calc(100% - 30px);  
-  padding-top: 2px;  
-  margin-top: -1px;
+	background: rgba(56, 4, 40, 0.9);  
+	font-family: 'Poppins', 'Ubuntu Mono';
+	height: calc(100% - 30px);  
+	padding-top: 2px;  
+	margin-top: -1px;
 }
 
 @media (max-width: 600px) {  
     #terminal {    
-        max-height: 90%;    
-        width: 90%;  
+		max-height: 90%;   
+		width: 90%;
     }
 }
 
+/* Misc */
+
 .highlight { color: rgba(16,128,0); }
+#scroll { background-color: #111; }

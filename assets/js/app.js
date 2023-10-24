@@ -17,18 +17,16 @@ document.querySelector('.copyleft').innerHTML = `<i class='las la-copyright'></i
 var code = '';
 
 window.addEventListener('keydown', function(e) {
-  var pattern = /^.$/;
+	var pattern = /^.$/;
 
-  if(e.key == 'Backspace') code = code.slice(0, -1);
+	if(e.key == 'Backspace') code = code.slice(0, -1);
 
-  else if(pattern.test(e.key)) {
-    code = (code.length >= 7) ? '' : (code+e.key).substring(0, 7);
+	else if(pattern.test(e.key)) {
+		code = (code.length >= 7) ? '' : (code+e.key).substring(0, 7);
 
-    switch(code) {
-      case 'devious': {
-        this.window.location.href = './assets/html/secret';
-      }
-    }
-  }
+		switch(code) {
+			case 'devious': { this.window.location.href = './assets/html/secret'; }
+		}
+	}
 
 }, false);

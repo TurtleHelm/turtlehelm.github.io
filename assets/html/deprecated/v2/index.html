@@ -53,7 +53,7 @@
             } 
 
             .bar__button {  
-                display: flex;  
+                display: inherit;  
                 justify-content: center;  
                 align-items: center;  
                 padding: 0;  
@@ -105,83 +105,82 @@
                 overflow: auto;
             }
 
-            #scroll {
-                background-color: #111;
-            }
+            #scroll { background-color: #111; }
 
         </style>
+
     </head>
+
     <body>
-        <main id="container">
+        <div id="container">
             <div id="terminal">
                 <!-- Terminal Bar -->       
                 <section id="terminal__bar">          
                     <div id="bar__buttons"><a class="bar__button" id="bar__button--exit" href='https://turtlehelm.github.io/assets/html/secret'>&#10005;</a></div>
                     <p id="bar__user">user@terminal: ~ Helm Labs V2</p>        
                 </section>
-                
+
                 <!-- Terminal Body --> 
                 <section id="terminal__body">
-                    <main>
-                        <section id='scroll'>
-                            <section class='section section-card'>
-                                <section class='row-container center'>
-                                    <h2 class='title text-primary'>Helm Labs</h2>
-                                    <p class='motto grey-text'>Problem Solving Since 2020</p>
-                                </section>
+                    <main id='scroll'>
+                        <section class='section section-card'>
+                            <section class='row-container center'>
+                                <h2 class='title text-primary'>Helm Labs</h2>
+                                <p class='motto grey-text'>Problem Solving Since 2020</p>
                             </section>
-                            <section class='parallax-container'>
-                                <img src='./src/media/images/backgroundImages/background1.jpg'>
-                            </section>
-    
-                            <section class='section section-card'>
-                                <section class='row-container'>
-                                    <section class='center'>
-                                        <!-- <h2 class='header text-primary'><span class='scoreOut'>Software Developer</span> | Computer Nerd</h2> -->
-                
-                                        <section class='wrapper'>
-                                            <section class='static-text'>I'm a</section>
-                                            <ul class='dynamic-text'>
-                                                <li><a class='brackets'>&lt;\</a><span>Programmer</span><a class='brackets'>&gt;</a></li>
-                                                <li><a class='brackets'>&lt;\</a><span>Computer Nerd</span><a class='brackets'>&gt;</a></li>
-                                                <li><a class='brackets'>&lt;\</a><span>Software Engineer</span><a class='brackets'>&gt;</a></li>
-                                                <li><a class='brackets'>&lt;\</a><span>Teacher</span><a class='brackets'>&gt;</a></li>
-                                            </ul>
-                                        </section>
-                
-                                        <p class='grey-text motto'>"Programming is like building a car whilst you drive it. You never know what could happen"</p>
-                                    </section>
-                                </section>
-                            </section>
-
-                            <section class='parallax-container'>
-                                <img src='./src/media/images/backgroundImages/background2.jpg'>
-                            </section>
-
-                            
-                            <section class='section section-card'>
-                                <section class='row-container'>
-                                    <section>
-                                        <section class='center btn-wrapper'>
-                                            <h2 class='header text-primary'>View Portfolio</h2>
-                                            <a class='btn' href='https://turtlehelm.github.io'>{Time Travel}</a>
-                                        </section>
-                                    </section>
-                                </section>
-                            </section>
-
-                                        
-                            <section class='parallax-container'>
-                                <img src='./src/media/images/backgroundImages/background3.jpg'>
-                            </section>
-
-                            <!-- Footer -->
-                            <section class='footer center grey-text'><span class='copyleft'>©</span> Helm Labs, Inc 2022</section>
-
                         </section>
+
+                        <section class='parallax-container'>
+                            <img src='./src/media/images/backgroundImages/background1.jpg'>
+                        </section>
+
+                        <section class='section section-card'>
+                            <section class='row-container'>
+                                <section class='center'>
+                                <!-- <h2 class='header text-primary'><span class='scoreOut'>Software Developer</span> | Computer Nerd</h2> -->
+
+                                <section class='wrapper'>
+                                    <span class='static-text'>I'm a</span>
+                                        <ul class='dynamic-text'>
+                                            <li><a class='brackets'>&lt;\</a><span>Programmer</span><a class='brackets'>&gt;</a></li>
+                                            <li><a class='brackets'>&lt;\</a><span>Computer Nerd</span><a class='brackets'>&gt;</a></li>
+                                            <li><a class='brackets'>&lt;\</a><span>Software Engineer</span><a class='brackets'>&gt;</a></li>
+                                            <li><a class='brackets'>&lt;\</a><span>Teacher</span><a class='brackets'>&gt;</a></li>
+                                        </ul>
+                                </section>
+
+                                    <q class='grey-text motto'>Programming is like building a car whilst you drive it. You never know what could happen</q>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class='parallax-container'>
+                            <img src='./src/media/images/backgroundImages/background2.jpg'>
+                        </section>
+
+
+                        <section class='section section-card'>
+                            <section class='row-container'>
+                                <section>
+                                    <section class='center btn-wrapper'>
+                                        <h2 class='header text-primary'>View Portfolio</h2>
+                                        <a class='btn' href='https://turtlehelm.github.io'>{Time Travel}</a>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+
+
+                        <section class='parallax-container'>
+                            <img src='./src/media/images/backgroundImages/background3.jpg'>
+                        </section>
+
+                        <!-- Footer -->
+                        <section class='footer center grey-text'><span class='copyleft'>©</span> Helm Labs, Inc 2022</section>
+
                     </main>
                 </section>
             </div>    
-        </main>
+        </div>
     </body>
 </html>

@@ -123,10 +123,10 @@ p { font-size: 2.5rem; }
 .dynamic-text li::after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 30%;
     height: 100%;
     width: 100%;
-    background-color: var(--bg-clr);
+    background-color: #111;
     border-left: 0.125rem solid var(--btn-primClr);
     animation: typing 3s infinite;
 }
@@ -136,8 +136,6 @@ p { font-size: 2.5rem; }
 /* Keyframes */
 
 @keyframes typing {
-    40%, 60% { left: calc(100% + 0.625rem); }
-    100% { left: 0; }
+    30%, 40% { left: 75%; }
+    100% { left: 30%; }
 }
-
-@keyframes slide { 100% { top: -22.5rem; } }
