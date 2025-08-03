@@ -25,7 +25,7 @@ window.addEventListener('keydown', function(e) {
 		code = (code.length >= 7) ? '' : (code+e.key).substring(0, 7);
 
 		switch(code) {
-			case 'devious': { this.window.location.href = './assets/html/secret'; }
+			case 'devious': { this.window.location.href = './site-archive'; }
 		}
 	}
 
