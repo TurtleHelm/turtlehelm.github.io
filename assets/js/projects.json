@@ -6,37 +6,37 @@
             "alt_text": "",
             "title": "YouTube Media Downloader",
             "symbol": ["lab", "la-python"],
-            "description": "A Simple CLI Python Executable To Download YouTube Videos",
+            "description": "A simple CLI Python executable to download YouTube videos",
             "link": "https://github.com/TurtleHelm/Youtube-Downloader",
             "link_symbol": ["lab", "la-github"]
         },
         {
-            "delay": "600",
+            "delay": "300",
             "image_path": "./assets/images/project-screenshots/ahc-project.png",
             "alt_text": "Netris Home Page",
             "title": "AHC Project",
             "symbol": ["lab", "la-python"],
-            "description": "My Advanced Higher Computing Science Project Using Pygame",
+            "description": "My advanced higher computing science project built using Python & Pygame",
             "link": "https://github.com/TurtleHelm/AHC-Project",
             "link_symbol": ["lab", "la-github"]
         },
         {
-            "delay": "300",
+            "delay": "600",
             "image_path": "./assets/images/project-screenshots/dnd-char-gen.png",
             "alt_text": "Code For DND Character Generator",
             "title": "D&D Character Generator",
             "symbol": ["lab", "la-python"],
-            "description": "Simple Python CLI To Generate Dungeons & Dragons Character Ideas",
+            "description": "Simple python CLI to generate Dungeons & Dragons character ideas",
             "link": "https://github.com/TurtleHelm/DND-Character-Creator",
             "link_symbol": ["lab", "la-github"]
         },
         {
             "delay": "600",
-            "image_path": "./assets/images/project-screenshots/yt-download.png",
+            "image_path": "./assets/images/project-screenshots/discord-bot.png",
             "alt_text": "",
             "title": "Discord Bot",
             "symbol": ["lab", "la-python"],
-            "description": "A simple Discord bot that has a variety of functions",
+            "description": "A simple Discord bot that can do various tasks",
             "link": "https://github.com/TurtleHelm/Discord-Bot",
             "link_symbol": ["lab", "la-github"]
         },
@@ -48,6 +48,16 @@
             "symbol": ["lab", "la-html5"],
             "description": "A repository for those seeking resources to learn computer science and programming",
             "link": "https://turtlehelm.github.io/learning",
+            "link_symbol": ["las", "la-link"]
+        },
+        {
+            "delay": "300",
+            "image_path": "./assets/images/project-screenshots/site-archive.png",
+            "alt_text": "",
+            "title": "Site Archive",
+            "symbol": ["lab", "la-html5"],
+            "description": "A website that hosts my old portfolio site designs, accessible via a fake terminal window.",
+            "link": "https://turtlehelm.github.io/site-archive",
             "link_symbol": ["las", "la-link"]
         }
     ]
