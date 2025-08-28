@@ -59,6 +59,16 @@
             "description": "A website that hosts my old portfolio site designs, accessible via a fake terminal window.",
             "link": "https://turtlehelm.github.io/site-archive",
             "link_symbol": ["las", "la-link"]
+        },
+        {
+            "delay": "300",
+            "image_path": "./assets/images/project-screenshots/scotbank.png",
+            "alt_text": "",
+            "title": "Java Banking Web App",
+            "symbol": ["lab", "la-java"],
+            "description": "A simple mock banking app made with a Java backend, a Handlebars.js frontend and a Python Flask API server.",
+            "link": "https://github.com/TurtleHelm/CS217-Scotbank",
+            "link_symbol": ["las", "la-link"]
         }
     ]
 }

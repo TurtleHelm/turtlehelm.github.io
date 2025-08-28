@@ -142,13 +142,18 @@ img { width: 100%; }
 /* Cards */
 
 .custom-card .custom-card-image {
+    aspect-ratio: 16 / 9;
     width: 100%;
-    height: 300px;
     overflow: hidden;
-    background-size: cover;
 }
 
-.custom-card .custom-card-image img { transition: all 0.4s ease; }
+.custom-card .custom-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
 .custom-card:hover .custom-card-image img { transform: scale(1.1); }
 
 .custom-card .custom-card-content p i,
