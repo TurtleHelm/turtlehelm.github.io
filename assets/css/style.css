@@ -163,6 +163,10 @@ img { width: 100%; }
 
 /* About */
 
+section#about.full-height {
+    min-height: 75vh;
+}
+
 .about-header {
     display: flex;
     justify-content: space-between;
@@ -170,7 +174,7 @@ img { width: 100%; }
 
 .about-header div.prof-name {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
 }
 
 .about-header p.about-quote {
